@@ -1,0 +1,22 @@
+Units Tests:
+1. A function called "multiplication" that returns the product of the two input numbers.
+
+-Expect multiplication(2, 6) to be a number.
+-Expect multiplication(3, 5) to be 15.
+-Expect multiplication("j", 3) to be an error.
+
+2. A function called "concatOdds" takes two arrays of integers as arguments. 
+It should return a single array that only contains the odd numbers, in ascending order, from both of the arrays.
+
+-Expect concatOdds([1, 7, 10], [3, -8, 12]) to be a single array.
+-Expect concatOdds([3, 11, 9], [4, 6, 11]) to be [3, 9, 11].
+-Expect concatOdds([0, "test", 7], [2, -9, 17]) to be an error.
+
+Functional Tests:
+1. A shopping cart checkout feature that allows a user to check out as a guest (without an account), or as a logged-in user. 
+They should be allowed to do either, but should be asked if they want to create an account or log in if they check out as a guest.
+
+-When a user clicks checkout but doesn't have anything in their cart, the user should be prompted to continue shopping.
+-When a user clicks checkout, the user should be prompted to check out as a guest or logged-in user. Regardless, the user should be be able to create an account or log in to an existing one throughout each step of the checkout process.
+-When a user clicks checkout, the user should be prompted with various forms of payment methods, regardless if they are checking out as a guest or logged in user.
+-When a user clicks checkout and decides to checkout as a guest, the user should be prompted to input their billing information.
